@@ -7,6 +7,36 @@
 	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&display=swap" rel="stylesheet">  
 </head>
 <body>
+<!--we are setting a breaking point for the photo in mobile view and changing the place of the link to be in the center of the screen-->
+	<style>
+		@media only screen and (max-width:700px)
+		{html
+			{
+			overflow-x:hidden ;
+		}
+		footer{	
+			width: 100%;}
+			.right-column{
+			display:none;}
+			.link{
+				margin-top: 5vh;
+				display: grid;
+				place-items: center;
+			}
+			.link a{
+				margin-right: 90%;
+
+			}
+			.text{
+				width: 75%;
+				
+			}
+			.text h6{
+				text-align: center;
+			}
+		}
+
+	</style>
 	<div class="hero">		
 	<div class="navbar">
 			<img class="easteregg" src="https://i.embed.ly/1/image?url=http%3A%2F%2Fwww.thaigoodview.com%2Ffiles%2Fu56186%2FUntitled-2.gif&key=f34571a3c472496b89650475c5352926" style="width: 25%">
@@ -39,12 +69,14 @@
 			<h4 class="weekone">Week 7-8</h4>
 			<h5> "Prototype design"</h5>
 				<br></br>
-				<h6> "The process of designing a prototype was far more difficult and time consuming then we had initially thought, however we thoroughly enjoyed the design process, as we could design, iterate, and prototype an application of our own creation, which was a fantastic learning experience and very useful."</h6>
+				<div class="text">
+					<h6> "The process of designing a prototype was far more difficult and time consuming then we had initially thought, however we thoroughly enjoyed the design process, as we could design, iterate, and prototype an application of our own creation, which was a fantastic learning experience and very useful."</h6>
+				</div>
 				
-			<h5>
-				
+			
+				<div class="link">
 				<a href="https://docs.google.com/document/d/e/2PACX-1vTqRmj-wDW9qCjurA5w6nES5cYfXPG3ojJxljnFuQBzcvCOx2Go0Dl7zS74gc_i7cLwXn1PSAmm7doC/pub" class="one"target="_blank">link to our presentation</a>
-			</h5>
+			    </div>
 			
 			<br></br>
 			<br></br>
