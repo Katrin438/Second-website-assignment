@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="favicon.ico">
+	<title>My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&display=swap" rel="stylesheet">  
+</head>
+<body>
+	<div class="hero">		
+	<div class="navbar">
+			<img class="easteregg" src="https://i.embed.ly/1/image?url=http%3A%2F%2Fwww.thaigoodview.com%2Ffiles%2Fu56186%2FUntitled-2.gif&key=f34571a3c472496b89650475c5352926" style="width: 25%">	
+			<div id="mySidebar" class="sidebar">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<ul>
+					<li><a class="active" href="index.html">Home</a></li>
+					<li><a href="a1.html">Assignment 1-2</a></li>
+					<li><a href="a2.html">User study</a></li>
+					<li><a href="a3.html"> Prototype design</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				  </ul>
+			  </div>
+	</div>
+	<button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+</div>
+	<!--This is where the visible part of the webpage comes -->
+<div class="banner">
+	<div class="left-column">
+		<div class="search-box">
+			<img class="easteregg" src="https://www.pinclipart.com/picdir/big/384-3841918_tool-clipart-mason-search-tool-png-transparent-png.png" style="width: 7%">
+			<input type="text">
+
+		</div>
+			<br></br>
+			<h1>Assignment </h1>
+
+			<h3><span>1</span> - <span>2</span></h3>
+			<br></br>
+			<h4 class="weekone">Week one</h4>
+			<h5> "AI in your daily life"</h5>
+				<br></br>
+				<h6>In our first assignment we had to provide two examples of AI in our daily life and explain what we like and dislike about it.</h6>
+			<br></br>	
+			<h5>
+				<a href="https://docs.google.com/document/d/e/2PACX-1vRVulYeYEA0D9qHGAwoSNLkYQ1HutrDfZ3NMva21ys0jHgV4-QX6VR7bHLEDMAqnVhO5izLvQ7PFVnW/pub" class="one"target="_blank">Assignment one</a>
+			</h5>
+			<br></br>
+
+			<h4 class="weekone">Week two</h4>
+			<h5>"A day as UX designer"</h5>
+			<br></br>
+			<h6>In our second assignment we had to provide two examples of our favourite UX application and two of the worst application we have ever seen.</h6>
+			<br></br>
+			<h5>
+				<a href="https://docs.google.com/document/d/e/2PACX-1vQtTbBGnAV24jEEBZMQCMyDu7aFlQNzLKxI2fsuwO33mFY8fwBpw_wV-ezeilc6x5ZHLIK7ErMzJn1y/pub"class="one"target="_blank">Assignment two</a>
+
+			</h5>
+			
+			
+	</div>
+	<div class="right-column">
+		<img src="pic.jpg" style="width: 80%">
+	</div>
+</div>
+<footer>
+  <p>EDO:Experience Design Orientation<br>
+</footer>	
+<script>/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+	var timeout;
+	document.getElementsByClassName("easteregg")[0].addEventListener('mouseover', () => {
+        timeout=setTimeout(() => {
+			document.getElementsByClassName("easteregg")[0].setAttribute('src', './new.png.png');
+        }, 5000)
+	});
+	document.getElementsByClassName("easteregg")[0].addEventListener('mouseleave', () => {
+        clearTimeout(timeout);
+    });
+	function openNav() {
+	  document.getElementById("mySidebar").style.width = "250px";
+	  document.getElementById("main").style.marginLeft = "250px";
+	}
+	
+	/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+	function closeNav() {
+	  document.getElementById("mySidebar").style.width = "0";
+	  document.getElementById("main").style.marginLeft = "0";
+	}  </script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+*{
+margin: 0;
+padding: 0;
+    font-family: 'Courgette', cursive;
+}
+.hero{
+
+margin: auto;
+
+}
+.navbar{
+margin: 30px auto;
+display: flex;
+align-items: center;
+}
+ul{
+flex: 1;
+text-align: right;
+
+}
+ ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 25px;
+}
+ul li a{
+ text-decoration: none;
+ color: #000;
+ padding: 0 10px;
+
+}
+ul li a::after{
+content: '';
+width: 0%;
+height: 11px;
+background-color: pink;
+position: absolute;
+transform: translateX(-90%);
+top: 10%;
+transition: 0.05s;
+}
+ul li a:hover::after{
+
+  width: 5%;
+}
+.banner{
+display: flex;
+margin-top: 80px;
+
+}
+.left-column,.right-column{
+flex-basis: 50%;
+
+}
+.might-column img{
+ 
+  width: 100%;
+}
+.search-box{
+width: 45%;
+display: flex;
+padding-bottom: 3px;
+border-bottom: 1px solid #ddd;
+margin: 10px 30px;
+cursor: pointer;
+
+}
+.search-box input{
+  width: 100%;
+  margin-left:15px;
+  font-size: 17px;
+  border: 0;
+  outline: none;
+
+
+}
+.left-column h1{
+font-size:30px;
+text-align: center;
+
+}
+.left-column {
+  font-size: 20px;
+  text-align: center;
+
+}
+.left-column h4{
+transform: translateX(-10%);
+font-size: 20px;
+
+}
+.left-column h6{
+transform: translateX(10%);
+font-size: 20px;
+text-align: left;
+}
+.left-column span{
+  color: #f14a60;
+}
+.left-column p{
+  margin: 50px 0;
+  color: #999;
+}
+.left-column .weekone {
+  transform: none;
+  font-size: none;
+  text-align: center;
+}
+ /*first assignment*/
+.left-column .one{
+padding-left: 400px;
+
+}
+  /*second assignment*/
+.left-column .two{
+
+  padding-right: 250px;
+}
+.left-column .colorfonth6{
+color: #f14a60;
+font-size: 18px;
+
+}
+.btn button{
+padding: 7px 30px;
+margin-left: 15px;
+outline: none;
+border: 1px solid #fb7381;
+border-radius: 20px;
+cursor: pointer;
+color: #fb7381;
+background:transparent;
+
+}
+.btn .primary-button{
+background:linear-gradient(#fb7381,#f14a60);
+box-shadow: 0 2px 15px rgba(248,38,103,0.26);
+color: #fff;
+
+
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #fb7381;
+  color: white;
+
+}
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.easteregg:hover{
+  cursor: pointer;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="favicon.ico">
+	<title>My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&display=swap" rel="stylesheet">  
+			
+			
+</head>
+<body>
+	<div class="hero">		
+	<div class="navbar">
+		<img class="easteregg"src="https://i.embed.ly/1/image?url=http%3A%2F%2Fwww.thaigoodview.com%2Ffiles%2Fu56186%2FUntitled-2.gif&key=f34571a3c472496b89650475c5352926" style="width: 25%">
+		
+	</div>
+	<button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+	<div id="mySidebar" class="sidebar">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<ul>
+			<li><a class="active" href="index.html">Home</a></li>
+			<li><a href="a1.html">Assignment 1-2</a></li>
+			<li><a href="a2.html">User study</a></li>
+			<li><a href="a3.html"> Prototype design</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		  </ul>
+	  </div>
+</div>
+<div class="banner">
+	<div class="left-column">
+		<div class="search-box">
+			<img src="https://www.pinclipart.com/picdir/big/384-3841918_tool-clipart-mason-search-tool-png-transparent-png.png" style="width: 7%">
+			<input type="text">
+		</div>
+			<br></br>
+			<br></br>
+			<h1>Catherine's <span>port</span>folio</h1>
+
+			<h3>About me</h3>
+			<br></br>
+			<h4>Hello user,</h4>
+			<h5>Welcome to my first website !</h5>
+				<br></br>
+				<h6>My name is Catherine and I'm a first year student at Fontys.I enjoy drawing and exploring new places with my friends and family.So far i have visited 9 countries in Europe.I want to visit Spain someday.</h6>
+				<br></br>
+				<br></br>
+			<div class="btn">
+				<button type="button" class="primary-button">Learn more</button>
+				<button type="button">Watch video</button>
+			</div>
+			
+	</div>
+	<div class="right-column">
+		<img src="pic.jpg" style="width: 80%">
+	</div>
+</div>
+<footer>
+  <p>EDO:Experience Design Orientation<br>
+</footer>
+<script>/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+	var timeout;
+	document.getElementsByClassName("easteregg")[0].addEventListener('mouseover', () => {
+        timeout=setTimeout(() => {
+			document.getElementsByClassName("easteregg")[0].setAttribute('src', './new.png.png');
+        }, 5000)
+	});
+	document.getElementsByClassName("easteregg")[0].addEventListener('mouseleave', () => {
+        clearTimeout(timeout);
+    });
+	function openNav() {
+	  document.getElementById("mySidebar").style.width = "250px";
+	  document.getElementById("main").style.marginLeft = "250px";
+	}
+	
+	/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+	function closeNav() {
+	  document.getElementById("mySidebar").style.width = "0";
+	  document.getElementById("main").style.marginLeft = "0";
+	}  </script>
+</body>
+</html>
