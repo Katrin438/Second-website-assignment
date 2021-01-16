@@ -8,6 +8,29 @@
 			
 </head>
 <body>
+	<style>
+		form{
+			display: grid;
+			place-items: center;
+			margin-left: 10rem;
+		}
+		@media screen and (max-width: 700px){
+	
+			html{
+				overflow-x: hidden;
+			}
+	
+			.right-column{
+			display: none;
+		}
+	
+	
+		
+	
+		}
+	
+	
+	</style>
 	<div class="hero">		
 	<div class="navbar">
 		<img class="easteregg"src="https://i.embed.ly/1/image?url=http%3A%2F%2Fwww.thaigoodview.com%2Ffiles%2Fu56186%2FUntitled-2.gif&key=f34571a3c472496b89650475c5352926" style="width: 25%">
@@ -38,11 +61,11 @@
 
 			    <label for="fname">First Name</label>
 			    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-			    <br>
+			   
 			    <label for="lname">Last Name</label>
 			    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-			    <br>
-			    <br>
+			   
+			    
 			    <label for="country" class="country">Country</label>
 			    <select id="country" name="country">
 			      <option value="australia">Australia</option>
@@ -50,13 +73,13 @@
 			      <option value="usa">USA</option>
 
 			    </select>
-			    <br>
-			    <br>
+			    
+			    
 			    <label for="subject" class="subject">Subject</label>
-			    <br>
+			    
 			    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-			    <br>
-			    <br>
+			    
+			    
 			    <input type="submit" class="submit" value="Submit">
 
   			</form>

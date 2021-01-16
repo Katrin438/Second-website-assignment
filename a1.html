@@ -7,6 +7,31 @@
 	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&display=swap" rel="stylesheet">  
 </head>
 <body>
+	<style>
+		@media only screen and (max-width:700px)
+        /*"overflow-x" makes the scroling to right disapear*/
+		{html
+			{
+			overflow-x:hidden ;
+			}		
+			.right-column{				
+			display:none;}
+			.left-column{
+            display: grid;
+            place-items: center;
+		}
+			footer{	
+			width: 100%;}
+			.one{
+				margin-left: -75%;
+			}
+			h6{
+				width: -80px;
+			}
+			
+		}
+
+	</style>
 	<div class="hero">		
 	<div class="navbar">
 			<img class="easteregg" src="https://i.embed.ly/1/image?url=http%3A%2F%2Fwww.thaigoodview.com%2Ffiles%2Fu56186%2FUntitled-2.gif&key=f34571a3c472496b89650475c5352926" style="width: 25%">	
@@ -24,13 +49,14 @@
 	<button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
 </div>
 	<!--This is where the visible part of the webpage comes -->
+	<div class="search-box">
+		<img class="easteregg" src="https://www.pinclipart.com/picdir/big/384-3841918_tool-clipart-mason-search-tool-png-transparent-png.png" style="width: 7%">
+		<input type="text">
+
+	</div>
 <div class="banner">
 	<div class="left-column">
-		<div class="search-box">
-			<img class="easteregg" src="https://www.pinclipart.com/picdir/big/384-3841918_tool-clipart-mason-search-tool-png-transparent-png.png" style="width: 7%">
-			<input type="text">
-
-		</div>
+	
 			<br></br>
 			<h1>Assignment </h1>
 
