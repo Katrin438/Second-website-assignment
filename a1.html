@@ -18,8 +18,11 @@
 			display:none;}
 			.left-column{
             display: grid;
-            place-items: center;
+			place-items: center;			
 		}
+		.left-column h6{
+            width: 80%;
+        }
 			footer{	
 			width: 100%;}
 			.one{
@@ -28,12 +31,14 @@
 			h6{
 				width: -80px;
 			}
-			
+			.search-box{
+				margin-top:10%;
+			}
 		}
-
 	</style>
 	<div class="hero">		
 	<div class="navbar">
+		<!-- here i added the sidebar and the easteregg.-->
 			<img class="easteregg" src="https://i.embed.ly/1/image?url=http%3A%2F%2Fwww.thaigoodview.com%2Ffiles%2Fu56186%2FUntitled-2.gif&key=f34571a3c472496b89650475c5352926" style="width: 25%">	
 			<div id="mySidebar" class="sidebar">
 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -46,6 +51,7 @@
 				  </ul>
 			  </div>
 	</div>
+	<!-- button for sidebar-->
 	<button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
 </div>
 	<!--This is where the visible part of the webpage comes -->

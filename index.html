@@ -4,9 +4,7 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<title>My Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&display=swap" rel="stylesheet">  
-			
-			
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&display=swap" rel="stylesheet">  					
 </head>
 <body>
 	<style>
@@ -30,7 +28,9 @@
 			.search-box{
 				margin-top: 20%;
 			}
-			
+			.left-column{
+				width: 90%;
+			}
 		}
 		</style>
 	<div class="hero">		
@@ -38,10 +38,14 @@
 		<img class="easteregg"src="https://i.embed.ly/1/image?url=http%3A%2F%2Fwww.thaigoodview.com%2Ffiles%2Fu56186%2FUntitled-2.gif&key=f34571a3c472496b89650475c5352926" style="width: 25%">
 		
 	</div>
+	<!-- here we create the button and we are using a function so that the menu opens.-->
 	<button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+	<!--creating the side bar-->
 	<div id="mySidebar" class="sidebar">
+		<!-- code from w3...-->
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<ul>
+		<!-- The only change i made for the tablet version was that i had to move the text bellow to be able to close the sidebar-->
+		<ul style="margin-top: 20%;">			
 			<li><a class="active" href="index.html">Home</a></li>
 			<li><a href="a1.html">Assignment 1-2</a></li>
 			<li><a href="a2.html">User study</a></li>
@@ -82,22 +86,30 @@
 <footer>
   <p>EDO:Experience Design Orientation<br>
 </footer>
-<script>/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-	var timeout;
+<script>
+/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */	
+	var timeout;/*we are creating a variable for the timeout*/
+
+	/* we are setting the event for the easteregg.after 5 sec the pic changes to the easteregg picture*/
 	document.getElementsByClassName("easteregg")[0].addEventListener('mouseover', () => {
         timeout=setTimeout(() => {
 			document.getElementsByClassName("easteregg")[0].setAttribute('src', './new.png.png');
         }, 5000)
 	});
+
+	/*if we move the mouse from the picture before the 5 sec nothing will happen*/
 	document.getElementsByClassName("easteregg")[0].addEventListener('mouseleave', () => {
         clearTimeout(timeout);
-    });
+	});
+
+	/*function for opening a side bar*/
 	function openNav() {
 	  document.getElementById("mySidebar").style.width = "250px";
 	  document.getElementById("main").style.marginLeft = "250px";
-	}
+	}	
 	
-	/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+	/*funtion for closing the side bar 
+	Set the width of the sidebar to 0 and the left margin of the page content to 0 */
 	function closeNav() {
 	  document.getElementById("mySidebar").style.width = "0";
 	  document.getElementById("main").style.marginLeft = "0";

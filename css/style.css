@@ -4,9 +4,7 @@ padding: 0;
     font-family: 'Courgette', cursive;
 }
 .hero{
-
 margin: auto;
-
 }
 .navbar{
 margin: 30px auto;
@@ -108,7 +106,9 @@ text-align: left;
 }
  /*first assignment*/
 .left-column .one{
-padding-left: 400px;
+padding-left: 10px;
+width: 100%;
+
 
 }
   /*second assignment*/
@@ -208,6 +208,10 @@ footer {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
+/*makes the mouse change to pointer*/
 .easteregg:hover{
   cursor: pointer;
+}
+ul{
+  margin-top: 20%;
 }
