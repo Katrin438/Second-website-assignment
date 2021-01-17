@@ -103,25 +103,33 @@
 <footer>
   <p>EDO:Experience Design Orientation<br>
 </footer>
-<script>/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-	var timeout;
-	document.getElementsByClassName("easteregg")[0].addEventListener('mouseover', () => {
-        timeout=setTimeout(() => {
-			document.getElementsByClassName("easteregg")[0].setAttribute('src', './new.png.png');
-        }, 5000)
-	});
-	document.getElementsByClassName("easteregg")[0].addEventListener('mouseleave', () => {
-        clearTimeout(timeout);
-    });
-	function openNav() {
-	  document.getElementById("mySidebar").style.width = "250px";
-	  document.getElementById("main").style.marginLeft = "250px";
-	}
+<script>
+	/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */	
+		var timeout;/*we are creating a variable for the timeout*/
 	
-	/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-	function closeNav() {
-	  document.getElementById("mySidebar").style.width = "0";
-	  document.getElementById("main").style.marginLeft = "0";
-	}  </script>
+		/* we are setting the event for the easteregg.after 5 sec the pic changes to the easteregg picture*/
+		document.getElementsByClassName("easteregg")[0].addEventListener('mouseover', () => {
+			timeout=setTimeout(() => {
+				document.getElementsByClassName("easteregg")[0].setAttribute('src', './new.png.png');
+			}, 5000)
+		});
+	
+		/*if we move the mouse from the picture before the 5 sec nothing will happen*/
+		document.getElementsByClassName("easteregg")[0].addEventListener('mouseleave', () => {
+			clearTimeout(timeout);
+		});
+	
+		/*function for opening a side bar*/
+		function openNav() {
+		  document.getElementById("mySidebar").style.width = "250px";
+		  document.getElementById("main").style.marginLeft = "250px";
+		}	
+		
+		/*funtion for closing the side bar 
+		Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+		function closeNav() {
+		  document.getElementById("mySidebar").style.width = "0";
+		  document.getElementById("main").style.marginLeft = "0";
+		}  </script>
 </body>
 </html>
